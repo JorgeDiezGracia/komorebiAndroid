@@ -21,6 +21,7 @@ public class SchoolDTO implements Serializable {
     }
 
 
+
     public String getName() {
         return name;
     }
@@ -33,7 +34,7 @@ public class SchoolDTO implements Serializable {
         return students;
     }
 
-    public boolean isPublicSchool() {
+    public boolean getPublicSchool() {
         return publicSchool;
     }
 

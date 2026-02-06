@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">komorebiAndroid</string>
+    <string name="school_city">school city</string>
+    <string name="school_name">school name</string>
+    <string name="school_students">school students</string>
+    <string name="public_school">public school</string>
+    <string name="register_date">register date</string>
+    <string name="register">register</string>
 </resources>

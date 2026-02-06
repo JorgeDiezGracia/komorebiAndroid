@@ -64,15 +64,15 @@ public class SchoolListView extends AppCompatActivity implements SchoolListContr
     }
 
     // Manejar click en + del ActionBar
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        if (item.getItemId() == R.id.action_register_school) {
-//           Intent intent = new Intent(this, RegisterSchoolView.class);
-//            startActivity(intent);
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_register_school) {
+           Intent intent = new Intent(this, RegisterSchoolView.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onResume() {
