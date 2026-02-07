@@ -1,11 +1,14 @@
 package com.svalero.komorebiandroid.view;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -27,6 +30,7 @@ public class RegisterSchoolView extends AppCompatActivity implements RegisterSch
 
         presenter = new RegisterSchoolPresenter(this);
     }
+
 
     public void registerSchool(View view) {
 

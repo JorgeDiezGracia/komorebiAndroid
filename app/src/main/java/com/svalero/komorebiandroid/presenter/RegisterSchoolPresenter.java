@@ -21,7 +21,7 @@ public class RegisterSchoolPresenter implements RegisterSchoolContract.Presenter
     public void registerSchool(String name, String city, int students, boolean publicSchool, String registerDate) {
         // TODO Validar correctamente
         if (name.isEmpty()) {
-            view.showValidationError("El nombre es un campo obligatorio");
+            view.showValidationError("Name is mandatory");
         }
 
         School school = School.builder()
@@ -38,7 +38,7 @@ public class RegisterSchoolPresenter implements RegisterSchoolContract.Presenter
 
     @Override
     public void onRegisterSuccess(School school) {
-        view.showMessage("Se ha registrado el colegio correctamente");
+        view.showMessage("School registered successfully");
     }
 
     @Override
