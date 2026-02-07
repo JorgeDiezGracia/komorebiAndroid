@@ -15,7 +15,8 @@ public class SchoolApi {
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://172.17.21.92:8081/")
+                .baseUrl("http://10.0.2.2:8081/")
+                //.baseUrl("http://172.17.21.92:8081/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
         return retrofit.create(SchoolApiInterface.class);
