@@ -1,5 +1,7 @@
 package com.svalero.komorebiandroid.view;
 
+import static com.svalero.komorebiandroid.util.DateUtil.formatFromString;
+
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -29,7 +31,7 @@ public class SchoolDetailView  extends AppCompatActivity {
             tvCity.setText(dto.getCity());
             tvStudents.setText(String.valueOf(dto.getStudents()));
             tvPublicSchool.setText(String.valueOf(dto.getPublicSchool()));
-            tvRegisterDate.setText(dto.getRegisterDate());
+            tvRegisterDate.setText(formatFromString(dto.getRegisterDate(), "dd-MM-yyyy", "yyyy-MM-dd"));
         }
     }
 }

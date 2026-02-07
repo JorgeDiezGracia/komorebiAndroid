@@ -1,5 +1,7 @@
 package com.svalero.komorebiandroid.view;
 
+import static com.svalero.komorebiandroid.util.DateUtil.formatFromString;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -51,7 +53,9 @@ public class RegisterSchoolView extends AppCompatActivity implements RegisterSch
         String registerDate = ((EditText) findViewById(R.id.school_register_date))
                 .getText().toString();
 
-        presenter.registerSchool(name, city, students, publicSchool, registerDate);
+        String correctFormatDate = formatFromString(registerDate, "yyyy-MM-dd", "dd-MM-yyyy");
+
+        presenter.registerSchool(name, city, students, publicSchool, correctFormatDate);
     }
 
 
