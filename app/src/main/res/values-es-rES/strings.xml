@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">komorebiAndroid</string>
+    <string name="school_city">ciudad</string>
+    <string name="school_name">nombre</string>
+    <string name="school_students">estudiantes</string>
+    <string name="public_school">colegio público</string>
+    <string name="register_date">fecha de registro</string>
+    <string name="register">registrar</string>
+</resources>
